@@ -54,7 +54,7 @@ If no image is available, a default empty poster will be displayed.
 
 ## Screenshots
 
-![Dashboard Example](images/screenshot1.png)  
+![Dashboard Example](screenshots/2.jpg)  
 ![Another Example](images/screenshot2.png)
 
 ---
