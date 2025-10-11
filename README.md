@@ -42,10 +42,11 @@ You can install Emby Stats via HACS or manually. Only use one method.
 The sensor will automatically update its state and attributes from your Emby server.
 
 Example Lovelace cards:  
-
+```yaml
 type: custom:mushroom-entity-card
 icon_type: entity-picture
 entity: sensor.total_movies
+```
 <img src="./screenshots/4.jpg" alt="Dashboard Example" width="400">
 
 
