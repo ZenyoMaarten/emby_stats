@@ -47,7 +47,7 @@ type: custom:mushroom-entity-card
 icon_type: entity-picture
 entity: sensor.total_movies
 ```
-<img src="./screenshots/4.jpg" alt="Dashboard Example" width="400">
+<img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/4.jpg" alt="Dashboard Example" width="400">
 
 
 ```yaml
@@ -87,9 +87,9 @@ name:
 - font-size: 12px
 ```
 
-<img src="./screenshots/1.jpg" alt="Dashboard Example" width="400">
-<img src="./screenshots/2.jpg" alt="Dashboard Example" width="400">
-<img src="./screenshots/3.jpg" alt="Dashboard Example" width="400">
+<img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/1.jpg" alt="Dashboard Example" width="400">
+<img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/2.jpg" alt="Dashboard Example" width="400">
+<img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/3.jpg" alt="Dashboard Example" width="400">
 ---
 
 ## Screenshots
