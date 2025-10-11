@@ -1,10 +1,11 @@
 # Emby Stats
 
-Home Assistant custom component for Emby statistics.
+Home Assistant component for Emby statistics sensors.
 
 ## Features
-- Display recently added movies, series, total movies, total series, total episodes, watched/unwatched movies and series, more comming
+- Display recently added movies, recently added series, total movies, total series, total episodes, watched/unwatched movies and series, more coming
 - Customizable entity names and icons
+- Create sensors for every Emby user you want
 - Automatically updates attributes from Emby server
 
 ## Sensors
@@ -33,8 +34,9 @@ You can install Emby Stats via HACS or manually. Only use one method.
 3. Add your GitHub repository URL: [https://github.com/ZenyoMaarten/emby_stats](https://github.com/ZenyoMaarten/emby_stats)  
    Select Integration as the type
 4. Click Download
-5. Go to Home Assistant → Settings → Devices & Services → Integrations → “+ Add Integration”. Search for Emby Stats and add it.
-6. Restart Home Assistant after installation
+5. Restart Home Assistant after installation
+6. Go to Home Assistant → Settings → Devices & Services → Integrations → “+ Add Integration”. Search for Emby Stats and add it.
+
 
 ### Option 2: Manual Installation
 1. Download or clone the repository using:  
@@ -42,8 +44,7 @@ You can install Emby Stats via HACS or manually. Only use one method.
 2. Copy the folder `custom_components/emby_stats/` into your Home Assistant `config/custom_components/` directory
 3. The folder structure should look like this:  
    config/custom_components/emby_stats/__init__.py  
-   config/custom_components/emby_stats/manifest.json  
-   config/custom_components/emby_stats/strings.json
+   config/custom_components/emby_stats/manifest.json
 4. Restart Home Assistant after copying
 
 ---
@@ -52,7 +53,7 @@ You can install Emby Stats via HACS or manually. Only use one method.
 
 ---
 
-## Using the Sensor
+## Using the Sensors
 The sensor will automatically update its state and attributes from your Emby server.
 
 Example Lovelace cards:  
@@ -105,11 +106,6 @@ name:
 <img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/2.jpg" alt="Dashboard Example" width="400">
 <img src="https://github.com/ZenyoMaarten/emby_stats/raw/main/screenshots/3.jpg" alt="Dashboard Example" width="400">
 ---
-
-## Screenshots
-
-
-
 
 ---
 
