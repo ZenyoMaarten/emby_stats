@@ -58,13 +58,11 @@ show_icon: false
 show_state: false
 show_entity_picture: true
 entity_picture: >
-  [[[ return `${entity.attributes["Item List
-  (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+  [[[ return `${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
 tap_action:
   action: url
   url_path: >
-    [[[ return `${entity.attributes["Item List
-    (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+    [[[ return `${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
 styles:
   card:
     - height: 250px
@@ -85,6 +83,7 @@ styles:
     - white-space: normal
     - text-align: center
     - font-size: 12px
+
 <img src="./screenshots/1.jpg" alt="Dashboard Example" width="400">
 <img src="./screenshots/2.jpg" alt="Dashboard Example" width="400">
 <img src="./screenshots/3.jpg" alt="Dashboard Example" width="400">
