@@ -54,7 +54,7 @@ If no image is available, a default empty poster will be displayed.
 
 ## Screenshots
 
-<img src="./screenshots/5.jpg" alt="Dashboard Example" width="200">
+<img src="./screenshots/4.jpg" alt="Dashboard Example" width="200">
 
 
 
