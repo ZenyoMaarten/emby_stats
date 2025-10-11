@@ -111,8 +111,7 @@ name:
 
 ## Notes
 - Only use one installation method: HACS or manual  
-- Always restart Home Assistant after installation  
-- Make sure to add the integration to `configuration.yaml` for it to work  
+- Always restart Home Assistant after installation    
 - For issues or suggestions, open an issue on GitHub
 
 ---
