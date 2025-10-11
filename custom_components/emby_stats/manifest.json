@@ -6,5 +6,6 @@
   "issue_tracker": "https://github.com/ZenyoMaarten/emby_stats/issues",
   "codeowners": ["@ZenyoMaarten"],
   "requirements": ["aiohttp>=3.7.4"],
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
+
