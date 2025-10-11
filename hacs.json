@@ -1,8 +1,5 @@
 {
   "name": "Emby Stats",
   "render_readme": true,
-  "domains": ["emby_stats"],
-  "homeassistant": "2025.10.1",
-  "iot_class": "local_polling",
-  "integration_type": "integration"
+  "homeassistant": "2025.10.1"
 }
