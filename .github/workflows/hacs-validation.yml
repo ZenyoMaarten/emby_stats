@@ -1,0 +1,35 @@
+name: Validate with HACS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install hacs
+
+      - name: Run HACS validation
+        uses: hacs/action@main
+        with:
+          category: "integration"
+
+      - name: Validate integration with Home Assistant
+        run: |
+          pip install homeassistant
+          python -m homeassistant --script check_config --config ./tests/config
+        continue-on-error: true
