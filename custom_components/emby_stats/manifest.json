@@ -1,9 +1,10 @@
 {
   "domain": "emby_stats",
   "name": "Emby Stats",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "documentation": "https://github.com/ZenyoMaarten/emby_stats",
   "requirements": ["aiohttp>=3.7.4"],
   "codeowners": ["@ZenyoMaarten"],
   "config_flow": true
 }
+
