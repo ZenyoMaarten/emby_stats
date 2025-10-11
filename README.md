@@ -49,40 +49,42 @@ entity: sensor.total_movies
 <img src="./screenshots/4.jpg" alt="Dashboard Example" width="400">
 
 
+```yaml
 type: custom:button-card
 entity: sensor.last_updated_tv_shows
 name: |
-  [[[ return entity.attributes["Item List (JSON)"][0].title; ]]]
+[[[ return entity.attributes["Item List (JSON)"][0].title; ]]]
 show_name: true
 show_icon: false
 show_state: false
 show_entity_picture: true
 entity_picture: >
-  [[[ return `${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+[[[ return ${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}; ]]]
 tap_action:
-  action: url
-  url_path: >
-    [[[ return `${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+action: url
+url_path: >
+[[[ return ${entity.attributes["Item List (JSON)"][0].image_url}?v=${Date.now()}; ]]]
 styles:
-  card:
-    - height: 250px
-    - padding: 0px
-    - display: flex
-    - flex-direction: column
-    - justify-content: space-between
-  img_cell:
-    - height: 200px
-    - width: 100%
-    - background-color: white
-  entity_picture:
-    - object-fit: cover
-    - height: 105%
-    - width: 105%
-  name:
-    - height: 50px
-    - white-space: normal
-    - text-align: center
-    - font-size: 12px
+card:
+- height: 250px
+- padding: 0px
+- display: flex
+- flex-direction: column
+- justify-content: space-between
+img_cell:
+- height: 200px
+- width: 100%
+- background-color: white
+entity_picture:
+- object-fit: cover
+- height: 105%
+- width: 105%
+name:
+- height: 50px
+- white-space: normal
+- text-align: center
+- font-size: 12px
+```
 
 <img src="./screenshots/1.jpg" alt="Dashboard Example" width="400">
 <img src="./screenshots/2.jpg" alt="Dashboard Example" width="400">
