@@ -7,6 +7,20 @@ Home Assistant custom component for Emby statistics.
 - Customizable entity names and icons
 - Automatically updates attributes from Emby server
 
+## Sensors
+
+- Total TV Shows
+- Total Movies
+- Unwatched TV Shows
+- Unwatched Movies
+- Watched TV Shows
+- Watched Movies
+- Total Episodes
+- Last TV Shows
+- Last Movies
+- Last Updated TV Shows
+
+
 ---
 
 ## Installation Options
