@@ -16,10 +16,10 @@ You can install Emby Stats via HACS or manually. Only use one method.
 ### Option 1: HACS Installation
 1. Open Home Assistant → HACS → Integrations → “+”
 2. Click Custom repositories
-3. Add your GitHub repository URL: [https://github.com/YOUR_USERNAME/emby_stats](https://github.com/YOUR_USERNAME/emby_stats)  
+3. Add your GitHub repository URL: [https://github.com/ZenyoMaarten/emby_stats](https://github.com/ZenyoMaarten/emby_stats)  
    Select Integration as the type
-4. Click Add
-5. Install the component via HACS
+4. Click Download
+5. Go to Home Assistant → Settings → Devices & Services → Integrations → “+ Add Integration”. Search for Emby Stats and add it.
 6. Restart Home Assistant after installation
 
 ### Option 2: Manual Installation
@@ -41,23 +41,57 @@ You can install Emby Stats via HACS or manually. Only use one method.
 ## Using the Sensor
 The sensor will automatically update its state and attributes from your Emby server.
 
-Example Lovelace grid using button-card:  
+Example Lovelace cards:  
 
-type: grid  
-columns: 3  
-cards:  
+type: custom:mushroom-entity-card
+icon_type: entity-picture
+entity: sensor.total_movies
+<img src="./screenshots/4.jpg" alt="Dashboard Example" width="400">
 
 
-If no image is available, a default empty poster will be displayed.
-
+type: custom:button-card
+entity: sensor.last_updated_tv_shows
+name: |
+  [[[ return entity.attributes["Item List (JSON)"][0].title; ]]]
+show_name: true
+show_icon: false
+show_state: false
+show_entity_picture: true
+entity_picture: >
+  [[[ return `${entity.attributes["Item List
+  (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+tap_action:
+  action: url
+  url_path: >
+    [[[ return `${entity.attributes["Item List
+    (JSON)"][0].image_url}?v=${Date.now()}`; ]]]
+styles:
+  card:
+    - height: 250px
+    - padding: 0px
+    - display: flex
+    - flex-direction: column
+    - justify-content: space-between
+  img_cell:
+    - height: 200px
+    - width: 100%
+    - background-color: white
+  entity_picture:
+    - object-fit: cover
+    - height: 105%
+    - width: 105%
+  name:
+    - height: 50px
+    - white-space: normal
+    - text-align: center
+    - font-size: 12px
+<img src="./screenshots/1.jpg" alt="Dashboard Example" width="400">
+<img src="./screenshots/2.jpg" alt="Dashboard Example" width="400">
+<img src="./screenshots/3.jpg" alt="Dashboard Example" width="400">
 ---
 
 ## Screenshots
 
-<img src="./screenshots/4.jpg" alt="Dashboard Example" width="400">
-<img src="./screenshots/1.jpg" alt="Dashboard Example" width="400">
-<img src="./screenshots/2.jpg" alt="Dashboard Example" width="400">
-<img src="./screenshots/3.jpg" alt="Dashboard Example" width="400">
 
 
 
