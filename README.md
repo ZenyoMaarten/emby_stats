@@ -17,9 +17,9 @@ Home Assistant component for Emby statistics sensors.
 - Watched TV Shows
 - Watched Movies
 - Total Episodes
-- Last TV Shows
-- Last Movies
-- Last Updated TV Shows
+- Last TV Shows (top 10)
+- Last Movies (top 10)
+- Last Updated TV Shows (top 10)
 
 
 ---
